@@ -6,18 +6,32 @@ class DashBoard extends Component{
     }
     
     render(){
-        const{location} =this.props;
-        const{state: {name,mobile,email}}=location;
+        const Users = JSON.parse(localStorage.getItem('newData')) || [];
 
         return(
             <div>
-                <h1 className="Sucusess">Welcome <span>{name}!</span></h1>
                 <div className="list">
-                    <h2>Your Registered Details:</h2>
-                    <hr/>
-                    <h3>Name: <span>{name}</span></h3>
-                    <h3>Mobile: <span>{mobile}</span></h3>
-                    <h3>Email Id: <span>{email}</span></h3>
+                    <h2>User List</h2>
+                    <table>
+                        <thead>
+                            <td>S.no</td>
+                            <td>Name</td>
+                            <td>Mobile</td>
+                            <td>Email</td>
+                        </thead>
+                        <tbody>
+                            {Users.map((item,index)=>{
+                                return(
+                                    <tr>
+                                        <td>{index+1}</td>
+                                        <td>{item.name}</td>
+                                        <td>{item.mobile}</td>
+                                        <td>{item.email}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
                 </div>
                 <button className="btn2" onClick={this.Pagechange} >Log Out</button>
             </div>
