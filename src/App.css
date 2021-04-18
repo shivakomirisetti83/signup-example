@@ -43,7 +43,7 @@ img {
   width: 58%;
   padding: 8px;
   border-radius: 36px;
-  background: #5FABB2;
+  background: #127b85;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -104,3 +104,133 @@ th, td {
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+@media screen and (max-width:480px){
+  img{
+    padding: 9px;
+      width: 97%;
+      height: auto;
+      border-radius: 20px;
+  }
+
+  .rightcontainer {
+    width: 100%;
+    background-color: white;
+    height:vh;
+    text-align: center;
+  }
+
+  .rightcontainer .heading  {
+    
+    margin: -180px 0px 0px 0px;
+    color: rebeccapurple;
+    text-shadow: 1px 2px 2px white;
+  }
+
+  .CaptionName   {
+    margin-top: 140px;
+    font-size: 15px;
+    color: #7B9199;
+  }   
+  
+  .list{
+    margin: 0px auto;
+    width: 95%;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 4px;
+  }
+
+  .errormsg {
+    color: red;
+    margin-top: -163px;
+    font-size: 18px;
+}
+}
+
+@media screen and (min-width:490px) and (max-width:1024px){
+ 
+  img{
+    padding: 9px;
+      width: 97%;
+      height: auto;
+      border-radius: 20px;
+  }
+
+  .rightcontainer {
+    width: 100%;
+    background-color: white;
+    height:vh;
+    text-align: center;
+  }
+
+  .rightcontainer .heading  {
+    
+    margin: -338px 0px 0px 0px;
+    color: skyblue;
+    text-shadow: 1px 2px 2px black;
+    font-size: 70px;
+}
+
+  .CaptionName   {
+    margin-top: 260px;
+    font-size: 30px;
+    color: #7B9199;
+  }
+
+  .rightcontainer input   {
+    padding: 10px;
+    width: 70%;
+    margin: 5px 0px;
+    border: none;
+    border-bottom: 2px solid #7B9199;
+    color: #7B9199;
+    font-size: 25px;
+    outline: none;
+  }
+
+  .rightcontainer .btn1  {
+    width: 70%;
+    padding: 11px;
+    border-radius: 36px;
+    background: #127b85;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+  }
+  
+  .rightcontainer a    {
+    text-decoration: none;
+    color: #5FABB2;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .list{
+    margin: 0px auto;
+    width: 95%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 25px;
+  }
+
+  .rightcontainer .btn2 {
+    width: 25%;
+    padding: 8px;
+    border-radius: 36px;
+    background: #5FABB2;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 50px 10px 0px 350px;
+  }
+}

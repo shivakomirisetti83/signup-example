@@ -36,7 +36,9 @@ class Login extends Component {
     }
 
     onInputChange = ({target}) =>{
-        this.setState({[target.name]:target.value})
+        this.setState({[target.name]:target.value});
+        this.setState({errormsg:""})
+
     }
 
     render(){
